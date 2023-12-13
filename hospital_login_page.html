@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hospital Login Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Open+Sans:wght@300;700&family=Playpen+Sans:wght@300&family=Roboto:ital,wght@1,100&family=Tilt+Neon&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'Playpen Sans', Courier, monospace;
+                border: 2px solid lightgray;
+                background-color: skyblue;
+                padding: 15px;
+                margin: 10px;
+                border-radius: 18px;
+            }
+            .mainclass{
+                font-family: 'Playpen Sans', Courier, monospace;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                border: 2px solid lightgray;
+                border-radius: 10px;
+                width: 55%;
+                background-color: tomato;
+                transition: all 0.5s ease-in-out;
+            }
+            .mainclass:hover{
+                background-color: lightseagreen;
+                color: darkblue;
+                padding: 15px;
+                margin: 10px;
+                transform: skew(12deg);
+            }
+            .otherclass{
+                font-family: 'Playpen Sans', Courier, monospace;
+                background-color: lightgray;
+                border: 2px solid silver;
+                border-radius: 15px;
+                color: black;
+                padding: 5px;
+                margin: 5px;
+                width: 30%;
+                transition: all 0.5s ease-in;
+            }
+            .otherclass:hover{
+                transform: scale(1);
+                padding: 10px;
+                margin: 5px;
+            }
+            #first{
+                font-family: 'Playpen Sans', Courier, monospace;
+                color: black;
+                padding: 10px;
+                margin: 5px;
+                border: 2px solid darkblue;
+                width: 55%;
+                border-radius: 15px;
+                background-color: lightseagreen;
+            }
+            .buttons{
+                font-family: 'Playpen Sans', Courier, monospace;
+                padding: 5px;
+                margin: 3px;
+                border-radius: 15px;
+                background-color: lightgray;
+                border-color: silver;
+                width: 15%;
+                transition: all 0.5s ease;
+            }
+            .buttons:hover{
+                padding: 10px;
+                margin: 5px;
+                transform: scale(1);
+                background-color: lightgreen;
+                color: darkgreen;
+            }
+            .buttontwo:hover{
+                background-color: lightsalmon;
+                color: darkred;
+            }
+            .my{
+                font-family: 'Playpen Sans', Courier, monospace;
+                color: black;
+                padding: 5px;
+                margin: 3px;
+                transition: all 0.5s ease-in-out;
+            }
+            .my:hover{
+                color: whitesmoke;
+                transform: rotateY(360deg);
+                font-size: 18;
+            }
+            .mine{
+                font-family: 'Playpen Sans', Courier, monospace;
+            }
+            #yes{
+                font-family: 'Playpen Sans', Courier, monospace;
+                padding: 2px;
+                margin: 2px;
+                background-color: navy;
+                border-radius: 18px;
+                max-width: 120px;
+                border: 2px solid silver;
+                /* max-height: 50px; */
+                transition: all 0.5s ease-in
+            }
+            #yes:hover{
+                padding: 8px;
+                margin: 5px;
+                transform: scale(1);
+            }
+        </style>
+
+    </head>
+    <body><br>
+        <form action="python.py" method="get">
+            <center><h1 align="center" class="mainclass">HOSPITAL LOGIN PAGE</h1></center><br>
+            <center><img id="yes" src="image1..jpg" alt="Hospital Sign"></center><br>
+            <center><div id="first">
+                    <!-- Code for Username -->
+                    <strong align="left"><label class="mine">Username:</label></strong>
+                    <input class="otherclass" type="text" name="Username" placeholder="Enter Valid Username" required autofocus><br><br>
+                    
+                    <!-- code for password -->
+                    <strong align="left"><label class="mine">Password:</label></strong>
+                    <input class="otherclass" type="password" name="Password" placeholder="Enter Correct Password" required autofocus><br><br><br>
+                    
+                    <!-- code for sign in -->
+                    <input type="submit" class="buttons" value="Sign In" align="left">
+                    <button class="buttons buttontwo" align="right">Sign Up</button><br><br>
+
+                    <p class="my">
+                        Forgot Password?
+                    </p>
+            </div></center>
+            <br>
+        </form>
+    </body>
+</html>
